@@ -19,7 +19,7 @@ function loadstring_returns_nil_plus_an_error_message_if_there_is_a_syntax_error
   local value = 10
   local status, message = loadstring("x x")
   assert_equal(nil, status)
-  assert_equal('[string "x x"]:1: syntax error near \'x\'', message)
+  assert_equal([[[string "x x"]:1: '=' expected near 'x']], message)
 end
 
 function loadstring_never_raises_errors_when_called_but_its_generated_function_can_raise_them()
