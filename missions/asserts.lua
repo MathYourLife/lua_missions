@@ -1,10 +1,10 @@
 
 function test_assert()
-  assert_true(false) -- this should be true. This is how you write comments in Lua
+  assert_true(true) -- this should be true. This is how you write comments in Lua
 end
 
 function test_assert_with_message()
-  assert_true(false, 'This should be true')
+  assert_true(true, 'This should be true')
 end
 
 function test_assert_expression()
